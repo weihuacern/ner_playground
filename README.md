@@ -1,1 +1,5 @@
-# ner_playground
+# Named-entity Recognition Playground
+
+```
+pip3 install -r requirements.txt
+```

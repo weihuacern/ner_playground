@@ -1,0 +1,17 @@
+syntax = "proto3";
+package data;
+
+enum NERLabelFormat {
+    DEFAULT_NER_FORMAT = 0;
+    IOB_NER_FORMAT = 1; //IOB format
+    BIOES_NER_FORMAT = 2; //BIOES format
+}
+
+message NERLabeledSentence {
+    repeated NERLabeledWord labeled_word_list = 1;
+}
+
+message NERLabeledWord {
+    string word = 1;
+    string tag = 2; //may be better to change it to integer
+}
